@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic Indian Laws</title>
     <link rel="stylesheet" href="style.css"
-    >
+    <script> type="text/javascript" </script>
 </head>
 <body>
     <header>
@@ -18,6 +18,8 @@
                 <li><a href="#family">Family Laws</a></li>
                 <li><a href="#resources">Resources</a></li>
             </ul>
+            <div id="google_translate_element"></div> 
+
         </nav>
     </header>
     <main>
@@ -28,6 +30,7 @@
                 <button type="button" onclick="performSearch()">Search</button>
             </form>
             <div id="searchResults"></div>
+            
         </section>
 
         <section id="criminal">
@@ -88,13 +91,24 @@
             </ul>
         </section>
         <link rel="stylesheet" href="style.css">
+
+<script src="script.js"></script>
+      <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        } 
+  </script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     </main>
     <footer>
         <p>&copy; 2024 Basic Indian Laws. All rights reserved.</p>
     </footer>
 
-    <script>
+    <script src="script.js">
         const data = 
-            "Criminal Laws": ["Section 302: Punishment for murder.", "Section 376: Punishment for rape.", "Section 420: Cheating and dishonestly inducing delivery of property."],
-            "Civil Laws": ["Contracts: Agreements enforceable by law.", "Torts: Civil wrongs causing harm or loss.", "Consumer Protection: Rights of consumers and redressal mechanisms."],
-            "Property Laws": ["Transfer of Property Act, 1882: Governs the transfer of property ownership.", "Land Acquisition Act, 1894: Rules for acquiring land for public purposes.", "Indian Registration Act, 1908
+            "Criminal Laws";["Section 302: Punishment for murder.", "Section 376: Punishment for rape.", "Section 420: Cheating and dishonestly inducing delivery of property."]
+            "Civil Laws"; ["Contracts: Agreements enforceable by law.", "Torts: Civil wrongs causing harm or loss.", "Consumer Protection: Rights of consumers and redressal mechanisms."],
+            "Property Laws"; ["Transfer of Property Act, 1882: Governs the transfer of property ownership.", "Land Acquisition Act; 1894;Rules for acquiring land for public purposes.", "Indian Registration Act, 1908"]
